@@ -1,0 +1,34 @@
+.site-header {
+  @extend .main-container;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.main-nav,
+.social-nav {
+  display: inline-block;
+  font-family: $heading-font-family;
+
+  li {
+    display: inline-block;
+    margin-left: $base-spacing;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.social-nav {
+  margin-right: $large-spacing;
+}
+
+.contact {
+  border: $base-border;
+  padding: 6px $small-spacing;
+  border-radius: 20px;
+}

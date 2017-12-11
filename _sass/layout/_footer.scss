@@ -1,0 +1,11 @@
+.site-footer {
+  @extend .main-container;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-size: $base-font-size;
+    font-weight: normal;
+    font-family: $base-font-family;
+  }
+}

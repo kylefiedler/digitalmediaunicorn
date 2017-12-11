@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ site.description }}">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="https://use.typekit.net/eqm1yvx.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/application.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1 class="logo">
+      <a href="/">
+        Digital Media Unicorn
+      </a>
+        </h1>
+      <nav>
+        <ul class="social-nav">
+          <li>
+            <a href="https://www.facebook.com/digitalmediaunicorn/">
+              {% include facebook.svg %}
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/DigMediaUnicorn">
+              {% include twitter.svg %}
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/digitalmediaunicorn/?hl=en">
+              {% include insta.svg %}
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav">
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="/contact" class="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>

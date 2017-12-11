@@ -1,0 +1,6 @@
+.main-container {
+  @include clearfix;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: $large-spacing;
+}

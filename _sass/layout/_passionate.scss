@@ -1,0 +1,54 @@
+.passionate {
+  @include clearfix;
+  background: $light-pink;
+  margin: 0 $base-spacing;
+  padding: $large-spacing 0;
+
+  .main-container {
+    padding-bottom: 0;
+  }
+
+  p {
+    float: left;
+    width: calc(33% - 0.85rem);
+    margin-right: $base-spacing;
+  }
+
+  h2 {
+    margin-bottom: $large-spacing;
+  }
+}
+
+.services {
+  float: left;
+  width: calc(66% - 0.85rem);
+
+  h3 {
+    background-color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    display: inline-block;
+    padding: 4px 8px;
+    margin-bottom: $base-spacing;
+  }
+
+  ul {
+    @include clearfix;
+  }
+
+  li {
+    float: left;
+    display: block;
+    width: calc(50% - 0.85rem);
+    margin-bottom: $small-spacing;
+    line-height: 1.2;
+    font-family: $heading-font-family;
+    font-size: 28px;
+    color: $gold;
+
+    &:nth-child(2n) {
+      margin-left: $base-spacing;
+    }
+  }
+}

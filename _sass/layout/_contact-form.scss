@@ -1,0 +1,59 @@
+.contact-form {
+  text-align: left;
+
+  h1 {
+    margin-bottom: $large-spacing;
+  }
+
+  label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 6px;
+    font-family: $heading-font-family;
+  }
+
+  textarea,
+  input {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 6px $small-spacing;
+    box-sizing: border-box;
+  }
+
+  input.button {
+    font-family: $heading-font-family;
+    color: #fff;
+    display: inline-block;
+    width: auto;
+    background: $pink;
+    border: none;
+    padding: $small-spacing $base-spacing;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:hover {
+      background: darken($pink, 10%);
+    }
+  }
+}
+
+.contact-form__wrapper {
+  display: flex;
+
+  form {
+    flex-grow: 1;
+    padding-right: $large-spacing;
+
+    div {
+      margin-bottom: $base-spacing;
+    }
+  }
+
+  aside {
+    padding-top: $base-spacing;
+    max-width: 33%;
+  }
+}

@@ -1,0 +1,23 @@
+.hero {
+  background-color: #fff;
+  border: $large-border;
+  box-shadow: 0 0 0 6px #fff;
+  text-align: center;
+  padding: $x-large-spacing $large-spacing;
+
+  h1 {
+    color: $pink;
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 0.9;
+    text-shadow: 0 0 25px $pink, 0 0 7px rgba($pink, 0.75);
+
+    span {
+      font-family: "learning-curve", $heading-font-family;
+      line-height: 1;
+      font-size: 70px;
+      margin-bottom: -15px;
+      display: block;
+    }
+  }
+}
