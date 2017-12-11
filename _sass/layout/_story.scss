@@ -1,14 +1,15 @@
 .story {
-  display: flex;
-  align-items: center;
-  position: relative;
-  top: -4rem;
-  padding-top: 0;
+  @media screen and (min-width: 820px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .story__content {
-  width: 50%;
-  padding-right: $large-spacing;
+  @media screen and (min-width: 820px) {
+    width: 50%;
+    padding-right: $large-spacing;
+  }
 
   h2 {
     margin-bottom: $base-spacing;
@@ -16,10 +17,4 @@
 }
 
 .story__image {
-}
-
-.increase {
-  .main-container {
-    padding-top: 0;
-  }
 }

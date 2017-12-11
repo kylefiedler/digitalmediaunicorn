@@ -61,9 +61,11 @@ img {
 }
 
 blockquote {
-  border-left: 3px solid $base-border-color;
-  padding-left: $base-spacing / 2;
-  margin: 0 0 1em;
+  margin: $large-spacing 0 1em;
+  font-family: $heading-font-family;
+  font-size: 20px;
+  border-top: $large-border;
+  padding-top: $base-spacing;
 }
 
 cite {

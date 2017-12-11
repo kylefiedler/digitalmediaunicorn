@@ -41,10 +41,13 @@
 }
 
 .contact-form__wrapper {
-  display: flex;
+  @media screen and (min-width: 990px) {
+    display: flex;
+  }
 
   form {
     flex-grow: 1;
+    order: 1;
     padding-right: $large-spacing;
 
     div {
@@ -53,7 +56,15 @@
   }
 
   aside {
-    padding-top: $base-spacing;
+    order: 2;
     max-width: 33%;
+
+    @media screen and (max-width: 990px) {
+      margin-bottom: $large-spacing;
+    }
+
+    @media screen and (min-width: 990px) {
+      padding-top: $base-spacing;
+    }
   }
 }
