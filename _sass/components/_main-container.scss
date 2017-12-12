@@ -2,5 +2,9 @@
   @include clearfix;
   max-width: 1000px;
   margin: 0 auto;
-  padding: $large-spacing;
+  padding: $small-spacing;
+
+  @media screen and (min-width: 450px) {
+    padding: $large-spacing;
+  }
 }

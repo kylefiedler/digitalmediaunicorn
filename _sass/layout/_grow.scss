@@ -6,10 +6,13 @@
 .grow__content {
   background: $mint;
   padding: $large-spacing;
-  width: 50%;
-  float: right;
   position: relative;
-  z-index: 1;
+
+  @media screen and (min-width: 650px) {
+    width: 50%;
+    float: right;
+    z-index: 1;
+  }
 
   a {
     margin-top: $large-spacing;
@@ -21,18 +24,28 @@
 }
 
 .grow__image {
-  width: 50%;
-  margin-top: $xx-large-spacing;
-  position: absolute;
-  top: $large-spacing;
   z-index: 0;
+
+  @media screen and (min-width: 650px) {
+    margin-top: $xx-large-spacing;
+    position: absolute;
+    top: $large-spacing;
+    width: 50%;
+  }
 }
 
 .grow__weare {
-  width: 50%;
-  float: right;
   box-shadow: inset 0 0 0 3px $dark-gray;
-  margin-top: 8.8rem;
-  padding: $large-spacing;
+  padding: $base-spacing;
   position: relative;
+
+  @media screen and (min-width: 450px) {
+    padding: $large-spacing;
+  }
+
+  @media screen and (min-width: 650px) {
+    margin-top: 8.8rem;
+    width: 50%;
+    float: right;
+  }
 }

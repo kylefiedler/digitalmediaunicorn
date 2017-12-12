@@ -1,17 +1,29 @@
 .passionate {
   @include clearfix;
   background: $light-pink;
-  margin: 0 $base-spacing;
-  padding: $large-spacing 0;
+  padding: $base-spacing;
+  margin: 0 $small-spacing;
+
+  @media screen and (min-width: 450px) {
+    padding: $large-spacing 0;
+    margin: 0 $base-spacing;
+  }
 
   .main-container {
     padding-bottom: 0;
   }
 
   p {
-    float: left;
-    width: calc(33% - 0.85rem);
-    margin-right: $base-spacing;
+    @media screen and (max-width: 875px) {
+      max-width: 600px;
+      margin-bottom: $large-spacing;
+    }
+
+    @media screen and (min-width: 875px) {
+      float: left;
+      width: calc(33% - 0.85rem);
+      margin-right: $base-spacing;
+    }
   }
 
   h2 {
@@ -20,8 +32,10 @@
 }
 
 .services {
-  float: left;
-  width: calc(66% - 0.85rem);
+  @media screen and (min-width: 875px) {
+    float: left;
+    width: calc(66% - 0.85rem);
+  }
 
   h3 {
     background-color: #fff;
@@ -38,17 +52,20 @@
   }
 
   li {
-    float: left;
     display: block;
-    width: calc(50% - 0.85rem);
     margin-bottom: $small-spacing;
     line-height: 1.2;
     font-family: $heading-font-family;
     font-size: 28px;
     color: $gold;
 
-    &:nth-child(2n) {
-      margin-left: $base-spacing;
+    @media screen and (min-width: 550px) {
+      float: left;
+      width: calc(50% - 0.85rem);
+
+      &:nth-child(2n) {
+        margin-left: $base-spacing;
+      }
     }
   }
 }

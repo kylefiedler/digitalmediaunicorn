@@ -3,21 +3,33 @@
   border: $large-border;
   box-shadow: 0 0 0 6px #fff;
   text-align: center;
-  padding: $x-large-spacing $large-spacing;
+  padding: $base-spacing;
+
+  @media screen and (min-width: 575px) {
+    padding: $x-large-spacing $large-spacing;
+  }
 
   h1 {
     color: $pink;
-    font-size: 60px;
+    font-size: 46px;
     font-weight: normal;
     line-height: 0.9;
     text-shadow: 0 0 25px $pink, 0 0 7px rgba($pink, 0.75);
 
+    @media screen and (min-width: 575px) {
+      font-size: 60px;
+    }
+
     span {
       font-family: "learning-curve", $heading-font-family;
       line-height: 1;
-      font-size: 70px;
+      font-size: 58px;
       margin-bottom: -15px;
       display: block;
+
+      @media screen and (min-width: 575px) {
+        font-size: 70px;
+      }
     }
   }
 }
