@@ -5,6 +5,11 @@
   text-align: center;
   padding: $base-spacing;
 
+  @media screen and (max-width: 450px) {
+    margin-top: $large-spacing;
+    margin-bottom: $large-spacing;
+  }
+
   @media screen and (min-width: 575px) {
     padding: $x-large-spacing $large-spacing;
   }

@@ -8,6 +8,10 @@
   padding: $large-spacing;
   position: relative;
 
+  @media screen and (max-width: 650px) {
+    margin-bottom: $base-spacing;
+  }
+
   @media screen and (min-width: 650px) {
     width: 50%;
     float: right;
@@ -25,6 +29,10 @@
 
 .grow__image {
   z-index: 0;
+
+  @media screen and (max-width: 650px) {
+    margin-bottom: $small-spacing;
+  }
 
   @media screen and (min-width: 650px) {
     margin-top: $xx-large-spacing;

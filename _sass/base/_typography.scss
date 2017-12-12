@@ -7,11 +7,15 @@ body {
   background-color: #fff;
   background-image: url("/images/pattern.svg");
   background-repeat: repeat-x;
-  background-position: center 250px;
+  background-position: center 200px;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+
+  @media screen and (min-width: 600px) {
+    background-position: center 250px;
+  }
 
   @media screen and (min-width: 600px) {
     background-position: center 180px;
