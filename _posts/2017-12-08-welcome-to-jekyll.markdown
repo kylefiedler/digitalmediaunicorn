@@ -1,11 +1,14 @@
 ---
 title: Welcome to Jekyll!
-date: 2017-12-08 03:15:06 Z
+date: 2017-12-08 03:15:00 Z
 categories:
 - jekyll
 - update
+post image: "/uploads/Screenshot%202018-03-18%2015.15.51.png"
 layout: post
 ---
+
+![Screenshot 2018-03-18 14.45.47.png](/uploads/Screenshot%202018-03-18%2014.45.47.png)
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
